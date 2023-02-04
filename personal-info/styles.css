@@ -1,0 +1,28 @@
+body {
+    background: #f9f9f9;
+}
+
+.ellipse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    top: 45px;
+}
+.white-background {
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    right: 0px;
+    top: 0px;
+
+    background: #ffffff;
+}
+
+.back-arrow {
+    position: absolute;
+    width: 9.21px;
+    height: 16px;
+    left: 62px;
+    top: 57px;
+}
