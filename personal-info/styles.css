@@ -1,5 +1,7 @@
 body {
     background: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
 .ellipse {
@@ -25,4 +27,336 @@ body {
     height: 16px;
     left: 62px;
     top: 57px;
+}
+
+.header {
+    margin: 0;
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1a1a1a;
+}
+
+.border-2 {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+    border: 1px solid #1a1a1a;
+}
+
+.page-1 {
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 49px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #1a1a1a;
+}
+.first-name-input,
+.second-name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 419px;
+    height: 122px;
+    top: 157px;
+}
+
+.first-name-input {
+    left: calc(50% - 419px / 2 - 624.5px);
+}
+
+.second-name-input {
+    left: calc(50% - 419px / 2 - 197.5px);
+}
+
+.name-input {
+    box-sizing: border-box;
+    width: 371px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.input-hint {
+    width: 371px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #2e2e2e;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.input-label {
+    width: 371px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.h2-title {
+    position: absolute;
+    width: 232px;
+    height: 22px;
+    left: 150px;
+    top: 325px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.submit-btn {
+    font-family: "Helvetica Neue";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 12px 12px;
+    gap: 10px;
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    left: 401px;
+    top: 325px;
+    background: #0e80bf;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 846px;
+    height: 148px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 393px;
+}
+
+.about-me {
+    width: 798px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.general-info {
+    box-sizing: border-box;
+    width: 798px;
+    height: 103px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    resize: none;
+}
+
+.mail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 558px;
+}
+
+.email {
+    width: 798px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mail-box {
+    box-sizing: border-box;
+    width: 798px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mail-span {
+    width: 798px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #2e2e2e;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 846px;
+    height: 122px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 693px;
+}
+.mobile-number {
+    width: 798px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mobile-input {
+    box-sizing: border-box;
+    width: 798px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mobile-span {
+    width: 798px;
+    height: 21px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #2e2e2e;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.btn-next {
+    font-family: "Helvetica Neue";
+    position: absolute;
+    font-size: 16px;
+    width: 151px;
+    height: 48px;
+    right: 972px;
+    bottom: 65px;
+    background: #6b40e3;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.red-logo {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 78px;
+    top: 994px;
+}
+
+.white-background {
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    right: 0px;
+    top: 0px;
+    background: #ffffff;
 }
