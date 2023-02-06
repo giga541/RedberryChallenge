@@ -6,6 +6,7 @@
         <title>Personal information</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="../fonts.css" />
+        <link rel="stylesheet" href="../common-styles.css" />
     </head>
     <body>
         <a href="../index.html">
@@ -32,7 +33,7 @@
                 <span class="input-hint">მინიმუმ ორი ასო, ქართული ასოები</span>
                 <input
                     type="text"
-                    class="name-input"
+                    class="text-input name-input"
                     id="first-name"
                     name="first-name"
                 />
@@ -42,7 +43,7 @@
                 <span class="input-hint">მინიმუმ ორი ასო, ქართული ასოები</span>
                 <input
                     type="text"
-                    class="name-input"
+                    class="text-input name-input"
                     id="surname"
                     name="surname"
                 />
@@ -50,11 +51,11 @@
             <h2 class="h2-title">პირადი ფოტოს ატვირთვა</h2>
             <button class="submit-btn">ატვირთვა</button>
             <div class="about">
-                <label class="about-me" for=""
+                <label class="input-label" for=""
                     >ჩემ შესახებ (არასავალდებულო)</label
                 >
                 <textarea
-                    class="general-info"
+                    class="text-input general-info"
                     name=""
                     id=""
                     cols="30"
@@ -62,14 +63,19 @@
                 ></textarea>
             </div>
             <div class="mail-container">
-                <label class="email" for="">ელ.ფოსტა</label>
-                <input type="text" class="mail-box" />
-                <span class="mail-span">უნდა მთავრდებოდეს redberry.ge-ით</span>
+                <label class="input-label" for="">ელ.ფოსტა</label>
+                <input type="text" class="text-input mail-box" />
+                <span class="input-hint">უნდა მთავრდებოდეს redberry.ge-ით</span>
             </div>
             <div class="mobile-container">
-                <label class="mobile-number" for="">მობილურის ნომერი</label>
-                <input type="text" name="" id="" class="mobile-input" />
-                <span class="mobile-span"
+                <label class="input-label" for="">მობილურის ნომერი</label>
+                <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="text-input mobile-input"
+                />
+                <span class="input-hint"
                     >უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</span
                 >
             </div>
@@ -80,7 +86,9 @@
                     alt="red-logo"
                 />
             </div>
-            <button class="btn-next">შემდეგი</button>
+            <a href="../experience/index.html">
+                <button class="btn-next" type="button">შემდეგი</button>
+            </a>
         </form>
     </body>
 </html>

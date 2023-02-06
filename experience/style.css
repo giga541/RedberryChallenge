@@ -1,0 +1,83 @@
+.position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 157px;
+}
+
+.employer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 294px;
+}
+
+.start-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 419px;
+    height: 125px;
+    left: calc(50% - 419px / 2 - 624.5px);
+    top: 431px;
+}
+
+.end-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 419px;
+    height: 93px;
+    left: calc(50% - 419px / 2 - 197.5px);
+    top: 431px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 846px;
+    height: 168px;
+    left: calc(50% - 846px / 2 - 411px);
+    top: 541px;
+}
+
+.date-input {
+    width: 371px;
+    height: 48px;
+}
+
+.position-input,
+.employer-input,
+.general-info {
+    width: 798px;
+}
+
+.general-info {
+    resize: none;
+}

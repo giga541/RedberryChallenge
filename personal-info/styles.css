@@ -1,16 +1,3 @@
-body {
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
-.ellipse {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 48px;
-    top: 45px;
-}
 .white-background {
     position: absolute;
     width: 822px;
@@ -21,51 +8,9 @@ body {
     background: #ffffff;
 }
 
-.back-arrow {
-    position: absolute;
-    width: 9.21px;
-    height: 16px;
-    left: 62px;
-    top: 57px;
-}
-
-.header {
-    margin: 0;
-    position: absolute;
-    width: 179px;
-    height: 29px;
-    left: 149px;
-    top: 47px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #1a1a1a;
-}
-
-.border-2 {
-    position: absolute;
-    width: 798px;
-    height: 0px;
-    left: 150px;
-    top: 88px;
-    border: 1px solid #1a1a1a;
-}
-
-.page-1 {
-    position: absolute;
-    width: 29px;
-    height: 24px;
-    left: 920px;
-    top: 49px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: right;
-    color: #1a1a1a;
+.name-input {
+    width: 371px;
+    height: 48px;
 }
 .first-name-input,
 .second-name-input {
@@ -86,53 +31,6 @@ body {
 
 .second-name-input {
     left: calc(50% - 419px / 2 - 197.5px);
-}
-
-.name-input {
-    box-sizing: border-box;
-    width: 371px;
-    height: 48px;
-    background: #ffffff;
-    border: 1px solid #bcbcbc;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.input-hint {
-    width: 371px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #2e2e2e;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.input-label {
-    width: 371px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .h2-title {
@@ -182,23 +80,6 @@ body {
     top: 393px;
 }
 
-.about-me {
-    width: 798px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
 .general-info {
     box-sizing: border-box;
     width: 798px;
@@ -226,52 +107,11 @@ body {
     top: 558px;
 }
 
-.email {
-    width: 798px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
 .mail-box {
-    box-sizing: border-box;
     width: 798px;
     height: 48px;
-    background: #ffffff;
-    border: 1px solid #bcbcbc;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
-.mail-span {
-    width: 798px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #2e2e2e;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-}
 .mobile-container {
     display: flex;
     flex-direction: column;
@@ -284,50 +124,10 @@ body {
     left: calc(50% - 846px / 2 - 411px);
     top: 693px;
 }
-.mobile-number {
-    width: 798px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    align-items: center;
-    color: #000000;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
 
 .mobile-input {
-    box-sizing: border-box;
     width: 798px;
     height: 48px;
-    background: #ffffff;
-    border: 1px solid #bcbcbc;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.mobile-span {
-    width: 798px;
-    height: 21px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #2e2e2e;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .btn-next {
@@ -342,6 +142,7 @@ body {
     border-radius: 4px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .red-logo {
@@ -350,13 +151,4 @@ body {
     height: 42px;
     left: 78px;
     top: 994px;
-}
-
-.white-background {
-    position: absolute;
-    width: 822px;
-    height: 1080px;
-    right: 0px;
-    top: 0px;
-    background: #ffffff;
 }
