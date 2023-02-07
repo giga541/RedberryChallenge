@@ -1,159 +1,164 @@
 body {
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
 .input-label {
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .input-hint {
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #2e2e2e;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #2e2e2e;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .text-input {
-  background: #ffffff;
-  border: 1px solid #bcbcbc;
-  border-radius: 4px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: rgba(0, 0, 0, 0.6);
-  padding: 13px 16px 14px 16px;
-  box-sizing: border-box;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 13px 16px 14px 16px;
+    box-sizing: border-box;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .ellipse {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 48px;
-  top: 45px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    top: 45px;
 }
 
 .back-arrow {
-  position: absolute;
-  width: 9.21px;
-  height: 16px;
-  left: 62px;
-  top: 57px;
+    position: absolute;
+    width: 9.21px;
+    height: 16px;
+    left: 62px;
+    top: 57px;
 }
 
 .header {
-  margin: 0;
-  position: absolute;
-  width: 179px;
-  height: 29px;
-  left: 149px;
-  top: 47px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1a1a1a;
+    margin: 0;
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1a1a1a;
 }
 
 .white-background {
-  position: absolute;
-  width: 822px;
-  height: 1080px;
-  right: 0px;
-  top: 0px;
-  background: #ffffff;
+    position: absolute;
+    width: 822px;
+    height: 1080px;
+    right: 0px;
+    top: 0px;
+    background: #ffffff;
 }
 
 .page-1 {
-  position: absolute;
-  width: 29px;
-  height: 24px;
-  left: 920px;
-  top: 49px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: right;
-  color: #1a1a1a;
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 49px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #1a1a1a;
 }
 
 .border-2 {
-  position: absolute;
-  width: 798px;
-  height: 0px;
-  left: 150px;
-  top: 88px;
-  border: 1px solid #1a1a1a;
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+    border: 1px solid #1a1a1a;
 }
 
 .btn-next {
-  font-family: "Helvetica Neue";
-  position: absolute;
-  font-size: 16px;
-  width: 151px;
-  height: 48px;
-  right: 972px;
-  bottom: 65px;
-  background: #6b40e3;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  cursor: pointer;
+    font-family: "Helvetica Neue";
+    position: absolute;
+    font-size: 16px;
+    width: 151px;
+    height: 48px;
+    right: 972px;
+    bottom: 65px;
+    background: #6b40e3;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
 }
 
 .btn-back {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 60px;
-  gap: 20px;
-  position: absolute;
-  width: 113px;
-  height: 48px;
-  left: 150px;
-  bottom: 65px;
-  background: #6b40e3;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  cursor: pointer;
+    position: absolute;
+    width: 113px;
+    height: 48px;
+    left: 150px;
+    bottom: 65px;
+    background: #6b40e3;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
 }
 
 .red-logo {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  left: 78px;
-  top: 994px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 78px;
+    top: 994px;
 }
