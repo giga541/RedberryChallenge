@@ -1,154 +1,131 @@
 .white-background {
-    position: absolute;
-    width: 822px;
-    height: 1080px;
-    right: 0px;
-    top: 0px;
+  position: absolute;
+  width: 822px;
+  height: 1080px;
+  right: 0px;
+  top: 0px;
 
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .name-input {
-    width: 371px;
-    height: 48px;
+  width: 371px;
+  height: 48px;
 }
 .first-name-input,
 .second-name-input {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-    position: absolute;
-    width: 419px;
-    height: 122px;
-    top: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 419px;
+  height: 122px;
+  top: 157px;
 }
 
 .first-name-input {
-    left: calc(50% - 419px / 2 - 624.5px);
+  left: calc(50% - 419px / 2 - 624.5px);
 }
 
 .second-name-input {
-    left: calc(50% - 419px / 2 - 197.5px);
+  left: calc(50% - 419px / 2 - 197.5px);
 }
 
 .h2-title {
-    position: absolute;
-    width: 232px;
-    height: 22px;
-    left: 150px;
-    top: 325px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1a1a1a;
-    margin: 0;
+  position: absolute;
+  width: 232px;
+  height: 22px;
+  left: 150px;
+  top: 325px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1a1a1a;
+  margin: 0;
 }
 
 .submit-btn {
-    font-family: "Helvetica Neue";
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px 12px 12px;
-    gap: 10px;
-    position: absolute;
-    width: 107px;
-    height: 27px;
-    left: 401px;
-    top: 325px;
-    background: #0e80bf;
-    color: #ffffff;
-    border-radius: 4px;
-    border: none;
+  font-family: "Helvetica Neue";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 12px 12px;
+  gap: 10px;
+  position: absolute;
+  width: 107px;
+  height: 27px;
+  left: 401px;
+  top: 325px;
+  background: #0e80bf;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-    position: absolute;
-    width: 846px;
-    height: 148px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 148px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 393px;
 }
 
 .general-info {
-    box-sizing: border-box;
-    width: 798px;
-    height: 103px;
-    background: #ffffff;
-    border: 1px solid #bcbcbc;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    resize: none;
+  box-sizing: border-box;
+  width: 798px;
+  height: 103px;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  resize: none;
 }
 
 .mail-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-    position: absolute;
-    width: 846px;
-    height: 122px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 558px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 122px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 558px;
 }
 
 .mail-box {
-    width: 798px;
-    height: 48px;
+  width: 798px;
+  height: 48px;
 }
 
 .mobile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-    position: absolute;
-    width: 846px;
-    height: 122px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 693px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 122px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 693px;
 }
 
 .mobile-input {
-    width: 798px;
-    height: 48px;
-}
-
-.btn-next {
-    font-family: "Helvetica Neue";
-    position: absolute;
-    font-size: 16px;
-    width: 151px;
-    height: 48px;
-    right: 972px;
-    bottom: 65px;
-    background: #6b40e3;
-    border-radius: 4px;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.red-logo {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    left: 78px;
-    top: 994px;
+  width: 798px;
+  height: 48px;
 }
