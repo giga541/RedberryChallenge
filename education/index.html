@@ -11,12 +11,27 @@
   <body>
     <div class="study-place">
       <label>სასწავლებელი</label>
-      <input type="text" class="text-input position-input" />
+      <input
+        type="text"
+        class="text-input position-input"
+        placeholder="სასწავლებელი"
+      />
       <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
     </div>
     <div class="education-lvl">
       <label>ხარისხი</label>
-      <input type="text" class="starting-date" />
+      <select class="starting-date" name="" id="">
+        <option value="">აირჩიეთ ხარისხი</option>
+        <option value="">საშუალო სკოლის დიპლომი</option>
+        <option value="">ზოგადსაგანმანათლებლო დიპლომი</option>
+        <option value="">ბაკალავრი</option>
+        <option value="">მაგისტრი</option>
+        <option value="">დოქტორი</option>
+        <option value="">ასოცირებული ხარისხი</option>
+        <option value="">კოლეჯი (ხარისხის გარეშე)</option>
+        <option value="">სტუდენტი</option>
+        <option value="">სხვა</option>
+      </select>
     </div>
     <div class="ending-date">
       <label class="input-label">დამთავრების რიცხვი</label>
@@ -30,7 +45,8 @@
     <div class="description-container-2">
       <label class="input-label" for="">აღწერა</label>
       <textarea
-        class="text-input-2"
+        placeholder="განათლების აღწერა"
+        class="text-input-2 text-input general-info"
         name=""
         id=""
         cols="30"
