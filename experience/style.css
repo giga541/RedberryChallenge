@@ -1,111 +1,111 @@
 .position {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-    position: absolute;
-    width: 846px;
-    height: 125px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 125px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 157px;
 }
 
 .employer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
 
-    position: absolute;
-    width: 846px;
-    height: 125px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 294px;
+  position: absolute;
+  width: 846px;
+  height: 125px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 294px;
 }
 
 .start-number {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
 
-    position: absolute;
-    width: 419px;
-    height: 125px;
-    left: calc(50% - 419px / 2 - 624.5px);
-    top: 431px;
+  position: absolute;
+  width: 419px;
+  height: 125px;
+  left: calc(50% - 419px / 2 - 624.5px);
+  top: 431px;
 }
 
 .end-number {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
 
-    position: absolute;
-    width: 419px;
-    height: 93px;
-    left: calc(50% - 419px / 2 - 197.5px);
-    top: 431px;
+  position: absolute;
+  width: 419px;
+  height: 93px;
+  left: calc(50% - 419px / 2 - 197.5px);
+  top: 431px;
 }
 
 .description-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 24px;
-    gap: 8px;
-
-    position: absolute;
-    width: 846px;
-    height: 168px;
-    left: calc(50% - 846px / 2 - 411px);
-    top: 541px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 168px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 541px;
 }
 
 .date-input {
-    width: 371px;
-    height: 48px;
+  width: 371px;
+  height: 48px;
 }
 
 .position-input,
 .employer-input,
 .general-info {
-    width: 798px;
+  width: 798px;
 }
 
 .general-info {
-    resize: none;
-    height: 123px;
+  resize: none;
+  height: 123px;
 }
 
 .line {
-    position: absolute;
-    width: 798px;
-    height: 0px;
-    left: 149px;
-    top: 759px;
-    border: 1px solid #c1c1c1;
+  position: absolute;
+  width: 798px;
+  height: 0px;
+  left: 149px;
+  top: 759px;
+  border: 1px solid #c1c1c1;
 }
 
 .btn-experience {
-    gap: 20px;
-    position: absolute;
-    width: 289px;
-    height: 48px;
-    left: calc(50% - 289px / 2 - 665.5px);
-    top: 805px;
-    background: #62a1eb;
-    border-radius: 4px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-    border: none;
+  gap: 20px;
+  position: absolute;
+  width: 289px;
+  height: 48px;
+  left: calc(50% - 289px / 2 - 665.5px);
+  top: 805px;
+  background: #62a1eb;
+  border-radius: 4px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }

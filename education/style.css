@@ -33,7 +33,6 @@
   align-items: flex-start;
   padding: 8px 24px;
   gap: 8px;
-
   position: absolute;
   width: 419px;
   height: 125px;
@@ -43,14 +42,11 @@
 
 .starting-date {
   box-sizing: border-box;
-
   width: 371px;
   height: 48px;
-
   background: #ffffff;
   border: 1px solid #bcbcbc;
   border-radius: 4px;
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -63,7 +59,6 @@
   align-items: flex-start;
   padding: 8px 24px;
   gap: 8px;
-
   position: absolute;
   width: 419px;
   height: 93px;
@@ -80,35 +75,59 @@
 
   position: absolute;
   width: 846px;
-  height: 224px;
+  height: 179px;
   left: calc(50% - 846px / 2 - 411px);
   top: 405px;
+  resize: none;
 }
 
 .line-2 {
   position: absolute;
-  width: 798px;
+  width: 846px;
   height: 0px;
   left: 150px;
-  top: 674px;
+  top: 681px;
 
   border: 1px solid #c1c1c1;
 }
 
 .btn-add {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 60px;
-  gap: 20px;
-
   position: absolute;
   width: 289px;
   height: 48px;
   left: calc(50% - 289px / 2 - 665.5px);
   top: 719px;
-
   background: #62a1eb;
   border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "Helvetica Neue";
+  cursor: pointer;
+}
+
+.description-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 224px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 405px;
+}
+
+.text-input-2 {
+  box-sizing: border-box;
+  width: 846px;
+  height: 179px;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  resize: none;
 }
