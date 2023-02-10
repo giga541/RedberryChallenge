@@ -1,3 +1,10 @@
 "use strict";
-
-const addField = document.querySelector("btn-experience");
+const firstName = localStorage.getItem("first-name");
+const surname = localStorage.getItem("surname");
+document.getElementById("cv-full-name").textContent = `${firstName} ${surname}`;
+const description = localStorage.getItem("description");
+document.getElementById("description").textContent = description;
+const mail = localStorage.getItem("mail");
+document.getElementById("mail").textContent = mail;
+const mobNumber = localStorage.getItem("mob-number");
+document.getElementById("mob-number").textContent = mobNumber;
