@@ -18,6 +18,9 @@
           alt="back-arrow"
         />
       </a>
+      <form id="xp-form">
+
+      
       <h1 class="header">გამოცდილება</h1>
       <div class="border-2"></div>
       <div class="page-1">2/3</div>
@@ -27,6 +30,7 @@
           placeholder="დეველოპერი, დიზაინერი, ა.შ."
           type="text"
           class="text-input position-input"
+          id="xp"
         />
         <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
       </div>
@@ -36,6 +40,7 @@
           placeholder="დამსაქმებელი"
           type="text"
           class="text-input employer-input"
+          id="employer"
         />
         <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
       </div>
@@ -44,7 +49,7 @@
         <input
           type="date"
           class="text-input date-input"
-          id="first-name"
+          id="starting-date"
           name="first-name"
         />
       </div>
@@ -53,7 +58,7 @@
         <input
           type="date"
           class="text-input date-input"
-          id="first-name"
+          id="finish-date"
           name="first-name"
         />
       </div>
@@ -63,7 +68,7 @@
           placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
           class="text-input general-info"
           name=""
-          id=""
+          id="description"
           cols="30"
           rows="10"
         ></textarea>
@@ -71,7 +76,7 @@
       <div class="line"></div>
       <button class="btn-experience">მეტი გამოცდილების დამატება</button>
       <a href="../education/">
-        <button class="btn-next" type="button">შემდეგი</button>
+        <button class="btn-next" type="submit">შემდეგი</button>
       </a>
       <a href="../personal-info">
         <button class="btn-back" type="button">უკან</button>
@@ -105,6 +110,7 @@
         </div>
       </div>
     </div>
+  </form>
     <script src="script.js"></script>
   </body>
 </html>
