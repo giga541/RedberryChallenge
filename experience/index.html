@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Experience</title>
     <link rel="stylesheet" href="../common-styles.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../fonts.css" />
@@ -18,99 +18,164 @@
           alt="back-arrow"
         />
       </a>
-      <form id="xp-form">
-
-      
       <h1 class="header">გამოცდილება</h1>
       <div class="border-2"></div>
       <div class="page-1">2/3</div>
-      <div class="position">
-        <label class="input-label" for="">თანამდებობა</label>
-        <input
-          placeholder="დეველოპერი, დიზაინერი, ა.შ."
-          type="text"
-          class="text-input position-input"
-          id="xp"
-        />
-        <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
-      </div>
-      <div class="employer">
-        <label class="input-label" for="">დამსაქმებელი</label>
-        <input
-          placeholder="დამსაქმებელი"
-          type="text"
-          class="text-input employer-input"
-          id="employer"
-        />
-        <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
-      </div>
-      <div class="start-number">
-        <label class="input-label">დაწყების რიცხვი</label>
-        <input
-          type="date"
-          class="text-input date-input"
-          id="starting-date"
-          name="first-name"
-        />
-      </div>
-      <div class="end-number">
-        <label class="input-label">დამთავრების რიცხვი</label>
-        <input
-          type="date"
-          class="text-input date-input"
-          id="finish-date"
-          name="first-name"
-        />
-      </div>
-      <div class="description-container">
-        <label class="input-label" for="">აღწერა</label>
-        <textarea
-          placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
-          class="text-input general-info"
-          name=""
-          id="description"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-      <div class="line"></div>
-      <button class="btn-experience">მეტი გამოცდილების დამატება</button>
-      <a href="../education/">
-        <button class="btn-next" type="submit">შემდეგი</button>
-      </a>
-      <a href="../personal-info">
-        <button class="btn-back" type="button">უკან</button>
-      </a>
-      <div class="white-background">
-        <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
-        <div class="cv">
-          <div id="display-img"></div>
-          <img src="../images/photo.svg" alt="photo" class="photo" />
-          <div class="name" id="cv-full-name">ავთო</div>
-          
-          <div class="email-container">
-            <img src="../images/at-sign.svg" alt="at-symbol" class="at-sign" />
-            <div id="mail" class="email">avtoshoshiashvili@redberry.ge</div>
+
+      <form id="xp-form">
+        <div class="experience-forms">
+          <div class="form-group">
+            <div class="position">
+              <label class="input-label" for="">თანამდებობა</label>
+              <input
+                placeholder="დეველოპერი, დიზაინერი, ა.შ."
+                type="text"
+                class="text-input position-input"
+                id="xp"
+              />
+              <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
+            </div>
+            <div class="employer">
+              <label class="input-label" for="">დამსაქმებელი</label>
+              <input
+                type="text"
+                class="text-input employer-input"
+                id="employer"
+              />
+              <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
+            </div>
+            <div class="dates">
+              <div class="start-number">
+                <label class="input-label">დაწყების რიცხვი</label>
+                <input
+                  type="date"
+                  class="text-input date-input"
+                  id="starting-date"
+                  name="first-name"
+                />
+              </div>
+              <div class="end-number">
+                <label class="input-label">დამთავრების რიცხვი</label>
+                <input
+                  type="date"
+                  class="text-input date-input"
+                  id="finish-date"
+                  name="first-name"
+                />
+              </div>
+            </div>
+            <div class="description-container">
+              <label class="input-label" for="">აღწერა</label>
+              <textarea
+                placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
+                class="text-input general-info"
+                name=""
+                id="cv-description-2"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="line"></div>
           </div>
-          <div class="phone-container">
+          <!-- <div class="form-1">
+              <div class="position">
+                <label class="input-label" for="">თანამდებობა</label>
+                <input
+                  placeholder="დეველოპერი, დიზაინერი, ა.შ."
+                  type="text"
+                  class="text-input position-input"
+                  id="xp"
+                />
+                <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
+              </div>
+              <div class="employer">
+                <label class="input-label" for="">დამსაქმებელი</label>
+                <input
+                  type="text"
+                  class="text-input employer-input"
+                  id="employer"
+                />
+                <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
+              </div>
+              <div class="start-number">
+                <label class="input-label">დაწყების რიცხვი</label>
+                <input
+                  type="date"
+                  class="text-input date-input"
+                  id="starting-date"
+                  name="first-name"
+                />
+              </div>
+              <div class="end-number">
+                <label class="input-label">დამთავრების რიცხვი</label>
+                <input
+                  type="date"
+                  class="text-input date-input"
+                  id="finish-date"
+                  name="first-name"
+                />
+              </div>
+              <div class="description-container">
+                <label class="input-label" for="">აღწერა</label>
+                <textarea
+                  placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
+                  class="text-input general-info"
+                  name=""
+                  id="cv-description-2"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="line"></div>
+            </div> -->
+        </div>
+
+        <button class="btn-experience">მეტი გამოცდილების დამატება</button>
+        <a href="../education/">
+          <button class="btn-next" type="submit">შემდეგი</button>
+        </a>
+        <a href="../personal-info">
+          <button class="btn-back" type="button">უკან</button>
+        </a>
+
+        <div class="white-background">
+          <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+          <div class="cv">
+            <div id="display-img"></div>
             <img
-              src="../images/phone-logo.svg"
-              alt="phone-logo"
-              class="phone"
+              src="../images/photo.svg"
+              alt="photo"
+              class="photo"
+              id="cv-photo"
             />
-            <div id="mob-number" class="phone-number">+995 598 122 124</div>
-          </div>
-          <div  class="about-me">ჩემ შესახებ</div>
-          <div id="description" class="about-me-text">
-            ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები
-            გამამხნევებელი ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
-          </div>
-          <div class="line-3"></div>
+            <div class="name" id="cv-full-name">ავთო</div>
+
+            <div class="email-container">
+              <img
+                src="../images/at-sign.svg"
+                alt="at-symbol"
+                class="at-sign"
+              />
+              <div id="mail" class="email">avtoshoshiashvili@redberry.ge</div>
+            </div>
+            <div class="phone-container">
+              <img
+                src="../images/phone-logo.svg"
+                alt="phone-logo"
+                class="phone"
+              />
+              <div id="mob-number" class="phone-number">+995 598 122 124</div>
+            </div>
+            <div class="about-me">ჩემ შესახებ</div>
+            <div id="cv-description" class="about-me-text">
+              ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები
+              გამამხნევებელი ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+            </div>
+            <div class="line-3"></div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
-  </form>
     <script src="script.js"></script>
   </body>
 </html>

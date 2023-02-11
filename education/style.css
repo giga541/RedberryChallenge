@@ -20,50 +20,54 @@
   padding: 8px 24px;
   gap: 8px;
 
-  position: absolute;
   width: 846px;
   height: 125px;
-  left: calc(50% - 846px / 2 - 411px);
-  top: 157px;
 }
 
 .education-lvl {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  /* padding: 8px 24px; */
   gap: 8px;
-  position: absolute;
   width: 419px;
-  height: 125px;
-  left: calc(50% - 419px / 2 - 624.5px);
-  top: 294px;
+  /* height: 125px; */
 }
 
-.starting-date {
-  box-sizing: border-box;
+.row {
+  display: flex;
+  padding: 8px 24px;
+  gap: 8px;
+}
+
+.input-degree {
   width: 371px;
-  height: 48px;
+  margin-top: 2px;
   background: #ffffff;
   border: 1px solid #bcbcbc;
   border-radius: 4px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 13px 16px 14px 16px;
+  box-sizing: border-box;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  text-align: left;
 }
 
 .ending-date {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
   gap: 8px;
-  position: absolute;
   width: 419px;
   height: 93px;
-  left: calc(50% - 419px / 2 - 197.5px);
-  top: 294px;
 }
 
 .description-2 {
@@ -82,27 +86,25 @@
 }
 
 .line-2 {
-  position: absolute;
   width: 846px;
   height: 0px;
-  left: 150px;
-  top: 673px;
 
   border: 1px solid #c1c1c1;
+  margin-left: 24px;
+  margin-top: 53px;
 }
 
 .btn-add {
-  position: absolute;
   width: 289px;
   height: 48px;
-  margin-left: 150;
-  top: 719px;
+  margin-left: 24px;
   background: #62a1eb;
   border-radius: 4px;
   border: none;
   color: white;
   font-family: "Helvetica Neue";
   cursor: pointer;
+  margin-top: 45px;
 }
 
 .description-container-2 {
@@ -111,11 +113,7 @@
   align-items: flex-start;
   padding: 8px 24px;
   gap: 8px;
-  position: absolute;
   width: 846px;
-  height: 224px;
-  left: calc(50% - 846px / 2 - 411px);
-  top: 405px;
 }
 
 .text-input-2 {
@@ -210,4 +208,57 @@
   font-size: 24px;
   line-height: 29px;
   color: #1a1a1a;
+}
+
+.ellipse-2 {
+  width: 40px;
+  height: 40px;
+  margin-left: 48px;
+  margin-top: -28px;
+}
+
+.quality {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edu-centre {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 370px;
+  height: 369px;
+  filter: drop-shadow(0px 16px 28px rgba(0, 0, 0, 0.24));
+  border-radius: 4px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px 10px 16px;
+  gap: 10px;
+  width: 346px;
+  height: 41px;
+  background: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
 }

@@ -4,11 +4,8 @@
   align-items: flex-start;
   padding: 8px 24px;
   gap: 8px;
-  position: absolute;
   width: 846px;
   height: 125px;
-  left: calc(50% - 846px / 2 - 411px);
-  top: 157px;
 }
 
 .employer {
@@ -18,52 +15,35 @@
   padding: 8px 24px;
   gap: 8px;
 
-  position: absolute;
   width: 846px;
   height: 125px;
-  left: calc(50% - 846px / 2 - 411px);
-  top: 294px;
 }
 
 .start-number {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
   gap: 8px;
 
-  position: absolute;
   width: 419px;
-  height: 125px;
-  left: calc(50% - 419px / 2 - 624.5px);
-  top: 431px;
 }
 
 .end-number {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
   gap: 8px;
 
-  position: absolute;
   width: 419px;
-  height: 93px;
-  left: calc(50% - 419px / 2 - 197.5px);
-  top: 431px;
 }
 
 .description-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 0 24px;
   gap: 8px;
-  position: absolute;
   width: 846px;
-  height: 168px;
-  left: calc(50% - 846px / 2 - 411px);
-  top: 541px;
 }
 
 .date-input {
@@ -86,8 +66,9 @@
   /* position: absolute; */
   width: 798px;
   height: 0px;
-  margin-left: 149px;
-  margin-top: 680px;
+  margin-top: 58px;
+  margin-bottom: 45px;
+  margin-left: 24px;
   border: 1px solid #c1c1c1;
 }
 
@@ -96,7 +77,6 @@
   width: 289px;
   height: 48px;
   margin-left: 149px;
-  margin-top: 44px;
   background: #62a1eb;
   border-radius: 4px;
   font-family: "Helvetica Neue";
@@ -107,20 +87,6 @@
   color: #fff;
   border: none;
   cursor: pointer;
-}
-
-.name {
-  position: absolute;
-  width: 430px;
-  height: 42px;
-  left: 80px;
-  top: 68px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 42px;
-  color: #f93b1d;
 }
 
 .surname {
@@ -137,88 +103,14 @@
   color: #f93b1d;
 }
 
-.email-container {
+.experience-forms {
+  margin-left: 126px;
+  margin-top: 69px;
+}
+
+.dates {
   display: flex;
-  margin-top: 162px;
-  margin-left: 82px;
-}
-
-.at-sign {
-  height: 16.67px;
-}
-
-.email {
-  margin-top: -3px;
-  padding-left: 12px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #1a1a1a;
-  text-decoration: none;
-}
-
-.phone-container {
-  display: flex;
-  margin-top: -50px;
-}
-
-.phone {
-  margin-left: 82px;
-}
-.phone-number {
-  padding-left: 12px;
-}
-
-.about-me {
-  position: absolute;
-  width: 118px;
-  height: 22px;
-  left: 80px;
-  top: 213px;
-
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  color: #f93b1d;
-}
-
-.about-me-text {
-  position: absolute;
-  width: 432px;
-  height: 72px;
-  left: 80px;
-  top: 250px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: lowercase;
-  color: #000000;
-}
-
-.line-3 {
-  position: absolute;
-  width: 662px;
-  height: 0px;
-  right: 80px;
-  top: 360px;
-  border: 1px solid #c8c8c8;
-}
-
-.photo {
-  position: absolute;
-  width: 246px;
-  height: 246px;
-  left: 501px;
-  top: 48px;
-
-  background: url(.jpg), #d9d9d9;
-  border-radius: 133px;
+  padding: 0 24px;
+  gap: 8px;
+  margin-bottom: 33px;
 }

@@ -27,7 +27,6 @@
         <label class="input-label">სახელი</label>
         <span class="input-hint">მინიმუმ ორი ასო, ქართული ასოები</span>
         <input
-          placeholder="სახელი"
           type="text"
           class="text-input name-input"
           id="first-name"
@@ -38,7 +37,6 @@
         <label class="input-label">გვარი</label>
         <span class="input-hint">მინიმუმ ორი ასო, ქართული ასოები</span>
         <input
-          placeholder="გვარი"
           type="text"
           class="text-input name-input"
           id="surname"
@@ -47,7 +45,9 @@
       </div>
       <h2 class="h2-title">პირადი ფოტოს ატვირთვა</h2>
 
-      <button class="submit-btn">ატვირთვა</button>
+      <label for="file-upload" class="custom-file-upload submit-btn">
+        ატვირთვა <input id="file-upload" type="file" class="submit-btn" />
+      </label>
       <div class="about">
         <label class="input-label" for="">ჩემ შესახებ (არასავალდებულო)</label>
         <textarea
@@ -61,18 +61,12 @@
       </div>
       <div class="mail-container">
         <label class="input-label" for="">ელ.ფოსტა</label>
-        <input
-          placeholder="nana97@redberry.ge"
-          type="text"
-          class="text-input mail-box"
-          id="mail"
-        />
+        <input type="text" class="text-input mail-box" id="mail" />
         <span class="input-hint">უნდა მთავრდებოდეს redberry.ge-ით</span>
       </div>
       <div class="mobile-container">
         <label class="input-label" for="">მობილურის ნომერი</label>
         <input
-          placeholder="+995 598 122 124"
           type="text"
           name=""
           id="mob-number"

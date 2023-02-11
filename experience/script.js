@@ -4,13 +4,17 @@ const surname = localStorage.getItem("surname");
 document.getElementById("cv-full-name").textContent = `${firstName} ${surname}`;
 
 const description = localStorage.getItem("description");
-document.getElementById("description").textContent = description;
+document.getElementById("cv-description").textContent = description;
 
 const mail = localStorage.getItem("mail");
 document.getElementById("mail").textContent = mail;
 
 const mobNumber = localStorage.getItem("mob-number");
 document.getElementById("mob-number").textContent = mobNumber;
+
+const photo = localStorage.getItem("photo");
+document.getElementById("cv-photo").src = photo;
+
 
 const xpForm = document.getElementById("xp-form");
 xpForm.addEventListener("submit", function (i) {
@@ -28,8 +32,8 @@ xpForm.addEventListener("submit", function (i) {
   const finishDate = document.getElementById("finish-date").value;
   localStorage.setItem("finish-date", finishDate);
 
-  //   const description = document.getElementById("description").value;
-  //   localStorage.setItem("description", description);
+    const description2 = document.getElementById("cv-description-2").value;
+    localStorage.setItem("cv-description-2", description2);
 
   window.location.href = "/education/";
 });
