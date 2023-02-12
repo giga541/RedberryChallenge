@@ -138,3 +138,21 @@ input[type="file"] {
   width: 798px;
   height: 48px;
 }
+
+.btn-next-personal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  position: absolute;
+  width: 151px;
+  height: 48px;
+  right: 972px;
+  bottom: 65px;
+
+  background: #6b40e3;
+  border-radius: 4px;
+}

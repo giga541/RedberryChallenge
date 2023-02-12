@@ -52,3 +52,24 @@ body {
   top: 89px;
   border: 1px solid #1a1a1a;
 }
+
+.btn-create-resume {
+  height: 60px;
+  background: #1a1a1a;
+  cursor: pointer;
+  border: none;
+  outline: inherit;
+  position: absolute;
+  color: white;
+  left: calc(50% - 464px / 2);
+  top: 513px;
+  width: 464px;
+  height: 60px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  background: #1a1a1a;
+  border-radius: 8px;
+}

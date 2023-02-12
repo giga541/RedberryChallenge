@@ -1,11 +1,11 @@
 .btn-finish {
   font-family: "Helvetica Neue";
-  position: absolute;
+  /* position: absolute; */
   font-size: 16px;
   width: 151px;
   height: 48px;
-  right: 972px;
-  bottom: 65px;
+  /* right: 972px; */
+  /* bottom: 65px; */
   background: #6b40e3;
   border-radius: 4px;
   color: white;
@@ -17,10 +17,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
 
-  width: 846px;
+  /* width: 846px; */
   height: 125px;
 }
 
@@ -36,7 +36,7 @@
 
 .row {
   display: flex;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
 }
 
@@ -74,11 +74,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
 
   position: absolute;
-  width: 846px;
+  /* width: 846px; */
   height: 179px;
   left: calc(50% - 846px / 2 - 411px);
   top: 405px;
@@ -86,18 +86,23 @@
 }
 
 .line-2 {
-  width: 846px;
+  /* width: 846px; */
   height: 0px;
 
   border: 1px solid #c1c1c1;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-top: 53px;
+}
+
+#edu-form {
+  width: 798px;
+  margin-top: 81px;
+  margin-left: 150px;
 }
 
 .btn-add {
   width: 289px;
   height: 48px;
-  margin-left: 24px;
   background: #62a1eb;
   border-radius: 4px;
   border: none;
@@ -111,14 +116,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
-  width: 846px;
+  /* width: 846px; */
 }
 
 .text-input-2 {
   box-sizing: border-box;
-  width: 846px;
+  /* width: 846px; */
   height: 179px;
   background: #ffffff;
   border: 1px solid #bcbcbc;

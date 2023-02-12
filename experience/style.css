@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
   width: 846px;
   height: 125px;
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 24px;
+  padding: 8px 0;
   gap: 8px;
 
   width: 846px;
@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   gap: 8px;
   width: 846px;
 }
@@ -68,15 +68,19 @@
   height: 0px;
   margin-top: 58px;
   margin-bottom: 45px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   border: 1px solid #c1c1c1;
+}
+
+.btn-row-exp {
+  margin-top: 110px;
 }
 
 .btn-experience {
   /* position: absolute; */
   width: 289px;
   height: 48px;
-  margin-left: 149px;
+  /* margin-left: 149px; */
   background: #62a1eb;
   border-radius: 4px;
   font-family: "Helvetica Neue";
@@ -103,14 +107,14 @@
   color: #f93b1d;
 }
 
-.experience-forms {
-  margin-left: 126px;
-  margin-top: 69px;
+#xp-form {
+  margin-left: 150px;
+  margin-top: 81px;
 }
 
 .dates {
   display: flex;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   gap: 8px;
   margin-bottom: 33px;
 }

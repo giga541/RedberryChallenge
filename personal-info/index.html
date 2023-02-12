@@ -53,7 +53,7 @@
         <textarea
           placeholder="ზოგადი ინფო შენ შესახებ"
           class="text-input general-info"
-          name=""
+          name="about-info"
           id="description"
           cols="30"
           rows="10"
@@ -61,14 +61,14 @@
       </div>
       <div class="mail-container">
         <label class="input-label" for="">ელ.ფოსტა</label>
-        <input type="text" class="text-input mail-box" id="mail" />
+        <input type="text" class="text-input mail-box" id="mail" name="mail" />
         <span class="input-hint">უნდა მთავრდებოდეს redberry.ge-ით</span>
       </div>
       <div class="mobile-container">
         <label class="input-label" for="">მობილურის ნომერი</label>
         <input
           type="text"
-          name=""
+          name="mobile-number"
           id="mob-number"
           class="text-input mobile-input"
         />
@@ -79,9 +79,39 @@
       <div class="white-background">
         <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
       </div>
-
-      <button class="btn-next" type="submit">შემდეგი</button>
+      <div class="btn-next-personal">
+        <button class="btn btn-next" type="submit">შემდეგი</button>
+      </div>
     </form>
+
+    <div class="white-background">
+      <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+      <div class="cv">
+        <div id="display-img"></div>
+        <img
+          src="../images/photo.svg"
+          alt="photo"
+          class="photo"
+          id="cv-photo"
+        />
+        <div class="name" id="cv-full-name">ავთო</div>
+
+        <div class="email-container">
+          <img src="../images/at-sign.svg" alt="at-symbol" class="at-sign" />
+          <div id="cv-mail" class="email">avtoshoshiashvili@redberry.ge</div>
+        </div>
+        <div class="phone-container">
+          <img src="../images/phone-logo.svg" alt="phone-logo" class="phone" />
+          <div id="cv-mob-number" class="phone-number">+995 598 122 124</div>
+        </div>
+        <div class="about-me">ჩემ შესახებ</div>
+        <div id="cv-description" class="about-me-text">
+          ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები გამამხნევებელი
+          ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+        </div>
+        <div class="line-3"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,22 +1,18 @@
 "use strict";
 const firstName = localStorage.getItem("first-name");
 const surname = localStorage.getItem("surname");
-document.getElementById("cv-full-name").textContent = `${firstName} ${surname}`;
-
 const description = localStorage.getItem("description");
-document.getElementById("cv-description").textContent = description;
-
 const mail = localStorage.getItem("mail");
-document.getElementById("mail").textContent = mail;
-
 const mobNumber = localStorage.getItem("mob-number");
-document.getElementById("mob-number").textContent = mobNumber;
-
+const xpForm = document.getElementById("xp-form");
 const photo = localStorage.getItem("photo");
+
+document.getElementById("cv-full-name").textContent = `${firstName} ${surname}`;
+document.getElementById("cv-description").textContent = description;
+document.getElementById("mail").textContent = mail;
+document.getElementById("mob-number").textContent = mobNumber;
 document.getElementById("cv-photo").src = photo;
 
-
-const xpForm = document.getElementById("xp-form");
 xpForm.addEventListener("submit", function (i) {
   i.preventDefault();
 

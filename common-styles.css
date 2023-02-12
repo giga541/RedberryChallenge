@@ -116,18 +116,18 @@ body {
 }
 
 .btn-next {
-  font-family: "Helvetica Neue";
-  position: absolute;
-  font-size: 16px;
   width: 151px;
+}
+
+.btn {
+  /* width: 113px; */
   height: 48px;
-  right: 972px;
-  bottom: 65px;
   background: #6b40e3;
   border-radius: 4px;
   color: white;
   border: none;
   cursor: pointer;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -135,22 +135,14 @@ body {
   letter-spacing: 0.08em;
 }
 
+.btn-row {
+  display: flex;
+  margin-top: 185px;
+  gap: 535px;
+}
+
 .btn-back {
   width: 113px;
-  height: 48px;
-  left: 150px;
-  bottom: 65px;
-  background: #6b40e3;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
 }
 
 .red-logo {
