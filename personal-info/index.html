@@ -10,7 +10,7 @@
   </head>
   <body>
     <a href="../index.html">
-      <div>
+      <div id="start-over-btn">
         <img class="ellipse" src="../images/Ellipse.svg" alt="ellipse" />
         <img
           class="back-arrow"
@@ -88,28 +88,60 @@
       <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
       <div class="cv">
         <div id="display-img"></div>
-        <img
-          src="../images/photo.svg"
-          alt="photo"
-          class="photo"
-          id="cv-photo"
-        />
-        <div class="name" id="cv-full-name">ავთო</div>
+        <img src="" alt="photo" class="photo" id="cv-photo" />
+        <div class="name not-visible" id="cv-full-name">ავთო</div>
 
-        <div class="email-container">
+        <div id="email-container" class="email-container not-visible">
           <img src="../images/at-sign.svg" alt="at-symbol" class="at-sign" />
           <div id="cv-mail" class="email">avtoshoshiashvili@redberry.ge</div>
         </div>
-        <div class="phone-container">
+        <div id="phone-container" class="phone-container not-visible">
           <img src="../images/phone-logo.svg" alt="phone-logo" class="phone" />
           <div id="cv-mob-number" class="phone-number">+995 598 122 124</div>
         </div>
-        <div class="about-me">ჩემ შესახებ</div>
-        <div id="cv-description" class="about-me-text">
-          ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები გამამხნევებელი
-          ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+        <div id="about-me-container" class="not-visible">
+          <div class="about-me">ჩემ შესახებ</div>
+          <div id="cv-description" class="about-me-text">
+            ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები
+            გამამხნევებელი ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+          </div>
         </div>
-        <div class="line-3"></div>
+        <div id="exp-container" class="xp-container not-visible">
+          <div class="line-3"></div>
+          <div class="xp">გამოცდილება</div>
+          <div id="cv-job" class="pos not-visible">
+            React Native Developer, Microsoft
+          </div>
+          <div id="cv-date" class="start-end-date not-visible">
+            2020-01-09 - 2023-01-01
+          </div>
+          <div id="cv-desc" class="desc not-visible">
+            Experienced Javascript Native Developer with 5 years in the
+            industry. proficient withreact. Used problem-solving aptitude to
+            encahge application performance by 14%.created data visualisation
+            tools and integrated designs.
+          </div>
+          <!-- <div class="line-4"></div> -->
+          <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+        </div>
+        <div id="edu-container" class="xp-container not-visible">
+          <div class="line-3"></div>
+          <div class="edu not-visible">განათლება</div>
+          <div id="cv-edu" class="pos not-visible">
+            React Native Developer, Microsoft
+          </div>
+          <div id="cv-edu-date" class="start-end-date not-visible">
+            2020-01-09 - 2023-01-01
+          </div>
+          <div id="cv-edu-desc" class="desc not-visible">
+            Experienced Javascript Native Developer with 5 years in the
+            industry. proficient withreact. Used problem-solving aptitude to
+            encahge application performance by 14%.created data visualisation
+            tools and integrated designs.
+          </div>
+          <!-- <div class="line-4"></div> -->
+          <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

@@ -10,8 +10,14 @@
   </head>
   <body>
     <a href="../index.html">
-      <img class="ellipse" src="../images/Ellipse.svg" alt="ellipse" />
-      <img class="back-arrow" src="../images/back-arrow.svg" alt="back-arrow" />
+      <div id="start-over-btn">
+        <img class="ellipse" src="../images/Ellipse.svg" alt="ellipse" />
+        <img
+          class="back-arrow"
+          src="../images/back-arrow.svg"
+          alt="back-arrow"
+        />
+      </div>
     </a>
     <h1 class="header">განათლება</h1>
 
@@ -22,7 +28,12 @@
         <div class="form-group">
           <div class="study-place">
             <label class="edu-centre">სასწავლებელი</label>
-            <input type="text" class="text-input position-input" />
+            <input
+              id="edu-centre"
+              name="edu-centre"
+              type="text"
+              class="text-input position-input"
+            />
             <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
           </div>
           <div class="row">
@@ -36,7 +47,11 @@
                   value="აირჩიეთ ხარისხი"
                 />
               </div>
-              <!-- <ul class="sheet" style="list-style-type: none">
+              <ul
+                id="dropdown-list"
+                class="sheet hidden"
+                style="list-style-type: none"
+              >
                 <li>საშუალო სკოლის დიპლომი</li>
                 <li>ზოგადსაგანმანათლებლო დიპლომი</li>
                 <li>ბაკალავრი</li>
@@ -46,7 +61,7 @@
                 <li>სტუდენტი</li>
                 <li>კოლეჯი (ხარისხის გარეშე)</li>
                 <li>სხვა</li>
-              </ul> -->
+              </ul>
             </div>
 
             <div class="ending-date">
@@ -54,8 +69,8 @@
               <input
                 type="date"
                 class="text-input date-input"
-                id="first-name"
-                name="first-name"
+                id="edu-end-date"
+                name="edu-end-date"
               />
             </div>
           </div>
@@ -64,8 +79,8 @@
             <textarea
               placeholder="განათლების აღწერა"
               class="text-input-2 text-input general-info"
-              name=""
-              id=""
+              name="edu-description"
+              id="edu-description"
               cols="30"
               rows="10"
             ></textarea>
@@ -83,38 +98,65 @@
     </form>
 
     <div class="white-background">
-      <div class="xp-container">
-        <div class="xp">გამოცდილება</div>
-        <div id="job" class="pos">React Native Developer, Microsoft</div>
-        <div id="date" class="start-end-date">2020-01-09 - 2023-01-01</div>
-        <div id="desc" class="desc">
-          Experienced Javascript Native Developer with 5 years in the industry.
-          proficient withreact. Used problem-solving aptitude to encahge
-          application performance by 14%.created data visualisation tools and
-          integrated designs.
+      <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+      <div class="cv">
+        <div id="display-img"></div>
+        <img src="" alt="photo" class="photo" id="cv-photo" />
+        <div class="name not-visible" id="cv-full-name">ავთო</div>
+
+        <div id="email-container" class="email-container not-visible">
+          <img src="../images/at-sign.svg" alt="at-symbol" class="at-sign" />
+          <div id="cv-mail" class="email">avtoshoshiashvili@redberry.ge</div>
         </div>
-        <div class="line-4"></div>
-        <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+        <div id="phone-container" class="phone-container not-visible">
+          <img src="../images/phone-logo.svg" alt="phone-logo" class="phone" />
+          <div id="cv-mob-number" class="phone-number">+995 598 122 124</div>
+        </div>
+        <div id="about-me-container" class="not-visible">
+          <div class="about-me">ჩემ შესახებ</div>
+          <div id="cv-description" class="about-me-text">
+            ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები
+            გამამხნევებელი ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+          </div>
+        </div>
+        <div id="exp-container" class="xp-container not-visible">
+          <div class="line-3"></div>
+          <div class="xp">გამოცდილება</div>
+          <div id="cv-job" class="pos not-visible">
+            React Native Developer, Microsoft
+          </div>
+          <div id="cv-date" class="start-end-date not-visible">
+            2020-01-09 - 2023-01-01
+          </div>
+          <div id="cv-desc" class="desc not-visible">
+            Experienced Javascript Native Developer with 5 years in the
+            industry. proficient withreact. Used problem-solving aptitude to
+            encahge application performance by 14%.created data visualisation
+            tools and integrated designs.
+          </div>
+          <!-- <div class="line-4"></div> -->
+          <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+        </div>
+        <div id="edu-container" class="xp-container not-visible">
+          <div class="line-3"></div>
+          <div class="edu">განათლება</div>
+          <div id="cv-edu" class="pos not-visible">
+            React Native Developer, Microsoft
+          </div>
+          <div id="cv-edu-date" class="start-end-date not-visible">
+            2020-01-09 - 2023-01-01
+          </div>
+          <div id="cv-edu-desc" class="desc not-visible">
+            Experienced Javascript Native Developer with 5 years in the
+            industry. proficient withreact. Used problem-solving aptitude to
+            encahge application performance by 14%.created data visualisation
+            tools and integrated designs.
+          </div>
+          <!-- <div class="line-4"></div> -->
+          <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
+        </div>
       </div>
-      <div class="name" id="cv-full-name">ავთო</div>
-
-      <div class="email-container">
-        <img src="../images/at-sign.svg" alt="at-symbol" class="at-sign" />
-        <div id="mail" class="email">avtoshoshiashvili@redberry.ge</div>
-      </div>
-      <img src="../images/photo.svg" id="cv-photo" class="photo" />
-      <div class="phone-container">
-        <img src="../images/phone-logo.svg" alt="phone-logo" class="phone" />
-        <div id="mob-number" class="phone-number">+995 598 122 124</div>
-      </div>
-      <div class="about-me">ჩემ შესახებ</div>
-      <div id="cv-description" class="about-me-text">
-        ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები გამამხნევებელი
-        ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
-      </div>
-      <div class="line-3"></div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

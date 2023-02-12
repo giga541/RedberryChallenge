@@ -154,12 +154,13 @@ body {
 }
 
 .line-3 {
-  position: absolute;
   width: 662px;
   height: 0px;
   right: 80px;
-  top: 360px;
   border: 1px solid #c8c8c8;
+  margin-left: 80px;
+  margin-top: 19px;
+  margin-bottom: 24px;
 }
 
 .photo {
@@ -169,66 +170,20 @@ body {
   left: 501px;
   top: 48px;
 
-  background: url(.jpg), #d9d9d9;
+  background: url(.jpg);
   border-radius: 133px;
-}
-
-.about-me-text {
-  position: absolute;
-  width: 432px;
-  height: 72px;
-  left: 80px;
-  top: 250px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: lowercase;
-  color: #000000;
-  word-wrap: break-word;
-}
-
-.about-me {
-  position: absolute;
-  width: 118px;
-  height: 22px;
-  left: 80px;
-  top: 213px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  color: #f93b1d;
 }
 
 .phone-container {
   display: flex;
-  margin-top: -50px;
+  margin-top: 10px;
 }
 
 .phone {
-  margin-left: 82px;
-}
-.phone-number {
-  padding-left: 12px;
-}
-
-.email-container {
-  display: flex;
-  margin-top: 162px;
-  margin-left: 82px;
-}
-
-.at-sign {
+  margin-left: 80px;
   height: 16.67px;
 }
-
-.email {
-  margin-top: -3px;
+.phone-number {
   padding-left: 12px;
   font-family: "Helvetica Neue";
   font-style: normal;
@@ -239,16 +194,140 @@ body {
   text-decoration: none;
 }
 
+.at-sign {
+  height: 16.67px;
+}
+
 .name {
-  position: absolute;
   width: 430px;
-  height: 42px;
-  left: 80px;
-  top: 68px;
+  margin-left: 80px;
+  margin-top: 68px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 42px;
   color: #f93b1d;
+}
+
+.email {
+  margin-top: -3px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.email-container {
+  display: flex;
+  margin-left: 80px;
+}
+
+.about-me {
+  width: 118px;
+  height: 22px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 34px;
+  margin-left: 80px;
+  /* identical to box height */
+
+  color: #f93b1d;
+}
+
+.about-me-text {
+  width: 432px;
+  height: 72px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: lowercase;
+  color: #000000;
+  word-wrap: break-word;
+  margin-left: 80px;
+}
+
+.xp,
+.edu {
+  width: 143px;
+  height: 22px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #f93b1d;
+  margin-left: 80px;
+}
+
+.pos {
+  height: 20px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+
+  color: #1a1a1a;
+}
+
+.start-end-date {
+  width: 183px;
+  height: 19px;
+
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 16px;
+  color: #919191;
+  margin-left: 80px;
+}
+
+.desc {
+  width: 662px;
+  height: 66px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-transform: capitalize;
+
+  margin-left: 80px;
+
+  color: #000000;
+}
+
+.email-container {
+  margin-top: 17px;
+}
+
+#cv-mail {
+  padding-left: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-visible {
+  visibility: hidden;
 }
