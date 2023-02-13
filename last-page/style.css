@@ -20,3 +20,28 @@
   line-height: 43px;
   color: #1a1a1a;
 }
+
+.cv-border {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 822px;
+  height: 1080px;
+  left: calc(50% - 822px/2);
+  top: 54px;
+
+  background: #FFFFFF;
+  border: 0.8px solid #000000;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+.cross {
+  margin-top: -100px;
+}
+
+.hidden {
+  display: none;
+}

@@ -43,7 +43,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.6);
+  /* color: rgba(0, 0, 0, 0.6); */
   padding: 13px 16px 14px 16px;
   box-sizing: border-box;
   flex: none;
@@ -133,6 +133,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.08em;
+}
+
+.btn:hover {
+  background: #7949FF;
 }
 
 .btn-row {
@@ -286,7 +290,7 @@ body {
 }
 
 .start-end-date {
-  width: 183px;
+  /* width: 183px; */
   height: 19px;
 
   font-family: "Helvetica Neue";
@@ -330,4 +334,12 @@ body {
 
 .not-visible {
   visibility: hidden;
+}
+
+.input-success {
+  border: 1px solid #98E37E;
+}
+
+.input-error {
+  border: 1px solid #EF5050;
 }

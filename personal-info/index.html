@@ -31,6 +31,7 @@
           class="text-input name-input"
           id="first-name"
           name="first-name"
+          placeholder="გიგა"
         />
       </div>
       <div class="second-name-input">
@@ -41,6 +42,7 @@
           class="text-input name-input"
           id="surname"
           name="surname"
+          placeholder="მიქაშავიძე"
         />
       </div>
       <h2 class="h2-title">პირადი ფოტოს ატვირთვა</h2>
@@ -61,16 +63,17 @@
       </div>
       <div class="mail-container">
         <label class="input-label" for="">ელ.ფოსტა</label>
-        <input type="text" class="text-input mail-box" id="mail" name="mail" />
+        <input type="text" class="text-input mail-box" id="mail" name="mail" placeholder="giga@redberry.ge" />
         <span class="input-hint">უნდა მთავრდებოდეს redberry.ge-ით</span>
       </div>
       <div class="mobile-container">
         <label class="input-label" for="">მობილურის ნომერი</label>
         <input
-          type="text"
+          type="tel"
           name="mobile-number"
           id="mob-number"
           class="text-input mobile-input"
+          placeholder="+995 555 555 555"
         />
         <span class="input-hint"
           >უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</span
@@ -88,7 +91,7 @@
       <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
       <div class="cv">
         <div id="display-img"></div>
-        <img src="" alt="photo" class="photo" id="cv-photo" />
+        <img src="" class="photo not-visible" id="cv-photo" />
         <div class="name not-visible" id="cv-full-name">ავთო</div>
 
         <div id="email-container" class="email-container not-visible">

@@ -3,8 +3,14 @@
 const experienceForm = document.getElementById("xp-form")
 const inputFields = experienceForm.querySelectorAll("input, textarea");
 
+const clearValidation = (field) => {
+  field.classList.remove('input-success')
+  field.classList.remove('input-error')
+}
+
 inputFields.forEach(field => {
   field.addEventListener("blur", e => {
+    validateField(e.target)
     localStorage.setItem(e.target.name, e.target.value)
     updateResume()
   })
@@ -27,23 +33,23 @@ const updateFields = () => {
 
 
 const updateResume = () => {
-  const firstName = localStorage.getItem("first-name")
-  const surname = localStorage.getItem("surname")
-  const aboutInfo = localStorage.getItem("about-info")
-  const mail = localStorage.getItem("mail")
-  const mobileNumber = localStorage.getItem("mobile-number")
-  const photo = localStorage.getItem("photo")
+  const firstName = localStorage.getItem("first-name") || ''
+  const surname = localStorage.getItem("surname") || ''
+  const aboutInfo = localStorage.getItem("about-info") || ''
+  const mail = localStorage.getItem("mail") || ''
+  const mobileNumber = localStorage.getItem("mobile-number") || ''
+  const photo = localStorage.getItem("photo") || ''
 
-  const xp = localStorage.getItem("xp")
-  const employer = localStorage.getItem("employer")
-  const startDate = localStorage.getItem("starting-date")
-  const finishDate = localStorage.getItem("finish-date")
-  const aboutInfoV2 = localStorage.getItem("cv-description-2")
+  const xp = localStorage.getItem("xp") || ''
+  const employer = localStorage.getItem("employer") || ''
+  const startDate = localStorage.getItem("starting-date") || ''
+  const finishDate = localStorage.getItem("finish-date") || ''
+  const aboutInfoV2 = localStorage.getItem("cv-description-2") || ''
 
-  const eduCentre = localStorage.getItem("edu-centre")
-  const eduEndDate = localStorage.getItem("edu-end-date")
-  const eduDescription = localStorage.getItem("edu-description")
-  const degree = localStorage.getItem("degree")
+  const eduCentre = localStorage.getItem("edu-centre") || ''
+  const eduEndDate = localStorage.getItem("edu-end-date") || ''
+  const eduDescription = localStorage.getItem("edu-description") || ''
+  const degree = localStorage.getItem("degree") || ''
 
   const fullNameElement = document.getElementById("cv-full-name")
 
@@ -61,6 +67,10 @@ const updateResume = () => {
   document.getElementById('cv-edu').textContent = `${eduCentre}, ${degree}`
   document.getElementById('cv-edu-date').textContent = eduEndDate
   document.getElementById('cv-edu-desc').textContent = eduDescription
+
+  if (photo) {
+    document.getElementById("cv-photo").classList.remove('not-visible')
+  }
 
   if (firstName || surname) {
     fullNameElement.classList.remove('not-visible')
@@ -106,20 +116,93 @@ const updateResume = () => {
   } else {
     document.getElementById("cv-desc").classList.add('not-visible')
   }
+
+
+  if (eduCentre) {
+    document.getElementById("cv-edu").classList.remove('not-visible')
+    document.getElementById("edu-container").classList.remove('not-visible')
+  } else {
+    document.getElementById("cv-edu").classList.add('not-visible')
+  }
+
+  if (eduCentre || degree) {
+    document.getElementById("cv-edu-date").classList.remove('not-visible')
+    document.getElementById("edu-container").classList.remove('not-visible')
+  } else {
+    document.getElementById("cv-edu-date").classList.add('not-visible')
+  }
+
+  if (eduDescription) {
+    document.getElementById("cv-edu-desc").classList.remove('not-visible')
+    document.getElementById("edu-container").classList.remove('not-visible')
+  } else {
+    document.getElementById("cv-edu-desc").classList.add('not-visible')
+  }
 }
 
 updateResume()
 updateFields()
 
+const validateMinimumLetters = (value, minLetters) => {
+  const success = value.length >= minLetters
+  const message = 'უნდა შეიცავდეს 2-ზე მეტ სიმბოლოს'
+  return {
+    success,
+    message
+  }
+}
+
+const validateNotEmpty = (value) => {
+  return {
+    success: !!value,
+    message: 'არ უნდა იყოს ცარიელი'
+  }
+}
+
+const validate = (fieldName, value) => {
+  if (fieldName == 'xp') {
+    return validateMinimumLetters(value, 2)
+  } else if (fieldName == 'employer') {
+    return validateMinimumLetters(value, 2)
+  } else if (fieldName == 'starting-date') {
+    return validateNotEmpty(value)
+  } else if (fieldName == 'finish-date') {
+    return validateNotEmpty(value)
+  } else {
+    return {
+      success: true
+    }
+  }
+}
+
+const validateField = (field) => {
+  clearValidation(field)
+  const validation = validate(field.name, field.value)
+
+  if (validation.success) {
+    field.classList.add('input-success')
+  } else {
+    field.classList.add('input-error')
+  }
+  return validation
+}
+
 
 experienceForm.addEventListener("submit", function (i) {
   i.preventDefault();
+  let isValid = true
 
-  window.location.href = "/education/";
+  for (const field of inputFields) {
+    const validation = validateField(field)
+    isValid = isValid && validation.success
+  }
+  
+  if (isValid) {
+    window.location.href = "../education/index.html";
+  }
 });
 
 const startOverBtn = document.getElementById("start-over-btn")
 startOverBtn.addEventListener("click", function (){
-  console.log('asdad')
   localStorage.clear()
 })

@@ -5,9 +5,18 @@ const inputFields = educationForm.querySelectorAll("input, textarea");
 const dropDownList = document.getElementById("dropdown-list");
 const dropDownBtn = document.getElementById("degree");
 
+const clearValidation = (field) => {
+  field.classList.remove('input-success')
+  field.classList.remove('input-error')
+}
+
 inputFields.forEach(field => {
   field.addEventListener("blur", e => {
-    localStorage.setItem(e.target.name, e.target.value)
+    console.log('e', e.target.name)
+    validateField(e.target)
+    if (e.target.name != 'degree') {
+      localStorage.setItem(e.target.name, e.target.value)
+    }
     updateResume()
   })
 })
@@ -19,6 +28,7 @@ dropDownBtn.addEventListener("click", e => {
 for (const child of dropDownList.children) {
     child.addEventListener("click", e => {
         const selectedVal = e.target.textContent
+        console.log('selectedVAl', selectedVal)
         localStorage.setItem("degree", selectedVal)
         dropDownBtn.value = selectedVal
         dropDownList.classList.add("hidden")
@@ -33,15 +43,72 @@ document.addEventListener("click", e => {
     }
 })
 
+const validateField = (field) => {
+  clearValidation(field)
+  const validation = validate(field.name, field.value)
+
+  if (validation.success) {
+    field.classList.add('input-success')
+  } else {
+    field.classList.add('input-error')
+  }
+  return validation
+}
+
+
+const validateMinimumLetters = (value, minLetters) => {
+  const success = value.length >= minLetters
+  const message = 'უნდა შეიცავდეს 2-ზე მეტ სიმბოლოს'
+  return {
+    success,
+    message
+  }
+}
+
+const validateNotEmpty = (value) => {
+  return {
+    success: !!value,
+    message: 'არ უნდა იყოს ცარიელი'
+  }
+}
+
+const validateDegree = () => {
+  const degree = localStorage.getItem("degree")
+  return {
+    success: !!degree,
+    message: 'ხარისხი'
+  }
+}
+
+const validate = (fieldName, value) => {
+  if (fieldName == 'xp') {
+    return validateMinimumLetters(value, 2)
+  } else if (fieldName == 'edu-centre') {
+    return validateMinimumLetters(value, 2)
+  } else if (fieldName == 'edu-end-date') {
+    return validateNotEmpty(value)
+  } else if (fieldName == 'finish-date') {
+    return validateNotEmpty(value)
+  }  else if (fieldName == 'degree') {
+    return validateDegree()
+  } else {
+    return {
+      success: true
+    }
+  }
+}
+
 const updateFields = () => {
   const eduCentre = localStorage.getItem("edu-centre") || ''
   const eduEndDate = localStorage.getItem("edu-end-date") || ''
   const eduDescription = localStorage.getItem("edu-description") || ''
-  const degree = localStorage.getItem("degree") || ''
+  const degree = localStorage.getItem("degree")
 
   document.getElementById("edu-centre").value = eduCentre
   document.getElementById("edu-end-date").value = eduEndDate
-  document.getElementById("degree").value = degree
+  if (degree) {
+    document.getElementById("degree").value = degree
+  }
   document.getElementById("edu-description").value = eduDescription
 }
 
@@ -80,6 +147,10 @@ const updateResume = () => {
   document.getElementById('cv-edu').textContent = `${eduCentre}, ${degree}`
   document.getElementById('cv-edu-date').textContent = eduEndDate
   document.getElementById('cv-edu-desc').textContent = eduDescription
+
+  if (photo) {
+    document.getElementById("cv-photo").classList.remove('not-visible')
+  }
 
   if (firstName || surname) {
     fullNameElement.classList.remove('not-visible')
@@ -156,7 +227,16 @@ updateFields()
 educationForm.addEventListener("submit", function (i) {
   i.preventDefault();
 
-  window.location.href = "/last-page/";
+  let isValid = true
+
+  for (const field of inputFields) {
+    const validation = validateField(field)
+    isValid = isValid && validation.success
+  }
+
+  if (isValid) {
+    window.location.href = "../last-page/index.html";
+  }
 });
 
 const startOverBtn = document.getElementById("start-over-btn")

@@ -274,3 +274,11 @@
   font-size: 16px;
   line-height: 21px;
 }
+
+.arrow-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: 340px;
+  margin-top: 45px;
+}

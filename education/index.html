@@ -33,6 +33,7 @@
               name="edu-centre"
               type="text"
               class="text-input position-input"
+              placeholder="თსუ"
             />
             <span class="input-hint">მინიმუმ ორი სიმბოლო</span>
           </div>
@@ -40,11 +41,13 @@
             <div class="education-lvl">
               <div class="dropdown-menu">
                 <label class="quality">ხარისხი</label>
+                <img class="arrow-icon" src="../images/arrow.svg" alt="">
                 <input
                   type="button"
                   class="input-degree"
                   id="degree"
                   value="აირჩიეთ ხარისხი"
+                  name="degree"
                 />
               </div>
               <ul
@@ -87,12 +90,12 @@
           </div>
         </div>
         <div class="line-2"></div>
-        <button class="btn-add">სხვა სასწავლებლის დამატება</button>
+        <button type="button" class="btn-add">სხვა სასწავლებლის დამატება</button>
         <div class="btn-row">
           <a href="../experience/">
             <button class="btn btn-back" type="button">უკან</button>
           </a>
-          <button class="btn btn-finish" type="button">დასრულება</button>
+          <button class="btn btn-finish" type="submit">დასრულება</button>
         </div>
       </div>
     </form>
@@ -101,7 +104,7 @@
       <img class="red-logo" src="../images/logo-2.svg" alt="red-logo" />
       <div class="cv">
         <div id="display-img"></div>
-        <img src="" alt="photo" class="photo" id="cv-photo" />
+        <img src="" alt="photo" class="photo not-visible" id="cv-photo" />
         <div class="name not-visible" id="cv-full-name">ავთო</div>
 
         <div id="email-container" class="email-container not-visible">
